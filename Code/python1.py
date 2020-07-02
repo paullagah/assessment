@@ -137,7 +137,8 @@ print(three(arg1))
 # help(int) for working with numbers and help(str) for working with Strings.
 arg1 = int(input("Next Numbers Please: "))
 def four(arg1):
-
+    if arg1.isdigit():
+        arg1.split()
     return 0
 
 
