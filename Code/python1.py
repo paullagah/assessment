@@ -70,15 +70,16 @@ print(one(input1, input2))
 
 # Use your CLI to access the Python documentation and get help manipulating strings - help(str).
 input1 = input("Insert the word here: ").lower()
-bert = "bert"
+bert = input1.find("bert") + len("bert")
+bert2 = input1.rindex("bert")
 
-def two(input1):
-    if input1.count("bert") >= 2:
-        return input1
+def two(input1, bert, bert2):
+    if input1.count("bert") == 2:
+        return input1[bert:bert2]
     else:
         return ""
 
-print(two(input1))
+print(two(input1, bert, bert2))
 
 # <QUESTION 3>
 

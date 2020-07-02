@@ -9,19 +9,19 @@ def test_one():
     assert python1.one("echo", "print") == "print"
     assert python1.one("fire", "rib") == "fire"
 
-#def test_two():
-#    assert python1.two("bertclivebert") == "clive"
-#    assert python1.two("xxbertfridgebertyy") == "fridge"
-#    assert python1.two("xxBertfridgebERtyy") == "fridge"
-#    assert python1.two("xxbertyy") == ""
-#    assert python1.two("xxbeRTyy") == ""
+def test_two():
+    assert python1.two("bertclivebert") == "clive"
+    assert python1.two("xxbertfridgebertyy") == "fridge"
+    assert python1.two("xxBertfridgebERtyy") == "fridge"
+    assert python1.two("xxbertyy") == ""
+    assert python1.two("xxbeRTyy") == ""
 
-#def test_three():
-#    assert python1.three(3) == "fizz"
-#    assert python1.three(10) == "buzz"
-#    assert python1.three(15) == "fizzbuzz"
-#    assert python1.three(8) == "null"
-#    assert python1.three(75) == "fizzbuzz"
+def test_three():
+    assert python1.three(3) == "fizz"
+    assert python1.three(10) == "buzz"
+    assert python1.three(15) == "fizzbuzz"
+    assert python1.three(8) == "null"
+    assert python1.three(75) == "fizzbuzz"
 
 
 #def test_four():
@@ -35,8 +35,7 @@ def test_one():
 #def test_five():
 #    assert python1.five("Jeff,random.py,False,1445") == ["Jeff"]
 #    assert python1.five("Bert,numberGen.py,True,1447,Bert,integers.py,True,1318,Jeff,floats.py,False,1445") == ["Jeff"]
-#    assert python1.five("Bert,boolean.py,False,1447,Bert,conditions.py,False,1318,Jeff,loops.py,False,1445") == ["Bert",
-#                                                                                                                 "Jeff"]
+#    assert python1.five("Bert,boolean.py,False,1447,Bert,conditions.py,False,1318,Jeff,loops.py,False,1445") == ["Bert", "Jeff"]
 #    assert python1.five("Bert,prime.py,True,1447,Bert,ISBN.py,False,1318,Jeff,OOP.py,False,1445") == ["Bert", "Jeff"]
 #    assert python1.five("Bert,files.py,True,1447,Bert,tests.py,True,1318,Jeff,app.py,True,1445") == []
 
