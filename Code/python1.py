@@ -40,7 +40,7 @@ def one(input1, input2):
     if len(input1) > len(input2):
         return input1
     elif len(input1) == len(input2):
-        return input1, input2
+        return input1 + " " + input2
     else:
         return input2
 
